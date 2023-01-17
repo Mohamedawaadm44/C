@@ -4,7 +4,7 @@
  Author      : Mohamed_awaad
  Version     :
  Copyright   : Exercise_2
- Description : Print a Integer Entered by a User
+ Description : Check vowel or consonant
  ============================================================================
  */
 
@@ -13,12 +13,15 @@
 
 int main(void) {
 
-int num;	
-printf("Enter a integer:\n" );
+char alphabet;	
+printf("Enter an alphabet:\n" );
 fflush(stdin);
 fflush(stdout);
-scanf("%d", &num);
-printf("You entered: %d\n" , num);
+scanf(" %c", &alphabet);
+if(alphabet=='a'||'e'||'i'||'o'||'u')
+     printf("%c is a vowel\n" , alphabet);
+else
+     printf("%c is a consonant\n" , alphabet);
 
 return 0 ;
 }

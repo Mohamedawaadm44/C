@@ -4,7 +4,7 @@
  Author      : Mohamed_awaad
  Version     :
  Copyright   : Exercise_1
- Description : Print a Sentence
+ Description : Check the number is even or odd
  ============================================================================
  */
 
@@ -13,7 +13,15 @@
 
 int main(void) {
 	
-		printf("C Programming\n" );
-	}
-	return 0 ;
+   int num ;
+   printf("Enter an interger you want to Check:" );
+   fflush(stdin);
+   fflush(stdout);
+   scanf("%d" ,num );
+   if(num%2==0)
+printf("%d is even",num );
+   else
+printf("%d is odd",num );
+
+ 	return 0 ;
 }
