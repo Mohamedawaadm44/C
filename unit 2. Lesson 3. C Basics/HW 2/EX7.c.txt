@@ -4,7 +4,7 @@
  Author      : Mohamed_awaad
  Version     :
  Copyright   : Exercise_7
- Description : Swap Two Float Numbers without temp variable
+ Description : factorial of number
  ============================================================================
  */
 
@@ -13,20 +13,22 @@
 
 int main(void) {
 
-float num1 , num2 ;	
-printf("Enter value of a:" );
+int num1 , fact=1 , counter=1 ;	
+printf("Enter an interger:" );
 fflush(stdin);
 fflush(stdout);
-scanf("%f", &num1);
-printf("Enter value of b:" );
-fflush(stdin);
-fflush(stdout);
-scanf("%f", &num2);
-num1 = num1 - num2;
-num2 = num1 + num2;
-num1 = num2 - num1;
-printf("After swapping, value of a = %f" , num1);
-printf("After swapping, value of b = %df , num2);
-
+scanf("%d", &num1);
+if(num1<0)
+printf("Error !!! factorial of negative number doesn't exist" );
+else if(num1==0)
+printf("Factorial = 1" );
+else 
+{
+for(;counter<=num1;counter++)
+{
+fact*=counter;
+}
+printf("Factorial = %d\n",fact );
+}
 return 0 ;
 }
