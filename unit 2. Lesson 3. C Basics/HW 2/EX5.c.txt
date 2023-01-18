@@ -4,7 +4,7 @@
  Author      : Mohamed_awaad
  Version     :
  Copyright   : Exercise_5
- Description : ASCII Value of a Character
+ Description : Check Character is an Alphabet or not
  ============================================================================
  */
 
@@ -18,7 +18,14 @@ printf("Enter a character:" );
 fflush(stdin);
 fflush(stdout);
 scanf("%c", &character);
-printf("ASCII value of %c = %d" , character ,character);
+if((character>='A' && character<= 'Z')||(character>='a' && character<= 'z'))
+{
+printf("%c is an Alphabet\n " , character );
+}
+else
+{
+printf("%c is not an Alphabet\n  " , character );
+}
 
 return 0 ;
 }
