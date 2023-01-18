@@ -4,29 +4,28 @@
  Author      : Mohamed_awaad
  Version     :
  Copyright   : Exercise_6
- Description : Swap Two Float Numbers
+ Description : Sum of an Natural Number
  ============================================================================
  */
+
 
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(void) {
 
-float num1 , num2 , temp;	
-printf("Enter value of a:" );
+int num1 , sum=0 , counter=1 ;	
+printf("Enter an interger:" );
 fflush(stdin);
 fflush(stdout);
-scanf("%f", &num1);
-printf("Enter value of b:" );
-fflush(stdin);
-fflush(stdout);
-scanf("%f", &num2);
-temp = num1;
-num1=num2;
-num2=temp;
-printf("After swapping, value of a = %f" , num1);
-printf("After swapping, value of b = %df , num2);
+scanf("%d", &num1);
+
+for(;counter<=num1;counter++)
+{
+sum+=counter;
+}
+printf("Sum = %d\n";sum );
+
 
 return 0 ;
 }
