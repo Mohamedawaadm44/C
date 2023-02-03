@@ -1,0 +1,48 @@
+/*
+ ============================================================================
+ Name        : EX5.c
+ Author      : Mohamed_awaad
+ Version     :
+ Copyright   : Exercise_4
+ Description : Array search
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int array[100];
+	int counter, searched_num ,arraysize;
+
+	// input the number of array elements
+	printf("Enter the number of array elements :\n" );
+	fflush(stdin);
+	fflush(stdout);
+	scanf(" %d",&arraysize);
+	printf("Enter the array elements :\n" );
+	fflush(stdin);
+	fflush(stdout);
+	//enter array elements
+	for(counter=0;counter<arraysize;counter++)
+	{
+		scanf(" %d",&array[counter] );
+	}
+
+	// input the search element
+	printf("Enter the element to be searched :\n" );
+	fflush(stdin);
+	fflush(stdout);
+	scanf(" %d",&searched_num);
+
+	// searching
+	for(counter=0;counter<arraysize;counter++)
+	{
+		if(array[counter]==searched_num)
+		{
+			printf("Number found at the location %d", counter+1);
+			break;
+		}
+	}
+	return 0 ;
+}
